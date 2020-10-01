@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+#more {display: none;}
+</style>
 	
 </head>
 
@@ -26,11 +29,33 @@
 
 <p><span class= "date">May 25th, 2012</span></p>
 
-<p>Quickly re-engineer business growth strategies with sustainable web-readiness. Collaboratively create visionary growth strategies vis-a-vis cooperative functionalities. Holistically extend cross-media technologies rather than cutting-edge experiences</p>
+<p>Quickly re-engineer business growth strategies with sustainable web-readiness. Collaboratively create visionary growth strategies vis-a-vis cooperative functionalities.
+	Holistically extend cross-media technologies rather than cutting-edge experiences</p>
 
-<p>Quickly re-engineer business growth strategies with sustainable web-readiness. Collaboratively create visionary growth strategies vis-a-vis cooperative functionalities. Holistically extend cross-media technologies rather than cutting-edge experiences. <a class="readmore" href="https://www.w3schools.com">Read more..</a></p>
+<p>Quickly re-engineer business growth strategies with sustainable web-readiness. Collaboratively create visionary growth strategies vis-a-vis cooperative functionalities. 
+	Holistically extend cross-media technologies rather than cutting-edge experiences.<span id="dots">.....</span><span id ="more">erisque enim ligula venenatis dolor.
+	Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+	In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum.
+	Sed dapibus pulvinar nibh tempor porta..</span></p>
 <br>
+		<button onclick="myFunction()" id="myBtn" >Read More</button>
+		<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 <div class="press">
 
 <img src="images/press-nbcnewyork.gif" alt="nbc">
